@@ -1,0 +1,215 @@
+:root {
+    --main-bg-color : #f5f5f7;
+    --gray-text : #6e6e73;
+    --page-black : #313131;
+    --link-color : #06c;
+}
+
+@font-face {
+    font-family: apple-sf-pro;
+    src: url(Fonts/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+    font-family: apple-sf-pro-bold;
+    src: url(Fonts/SFNSDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: apple-sf-pro-medium;
+    src: url(Fonts/SFNSDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: apple-sf-pro-light;
+    src: url(Fonts/SFNSDisplay-Light.otf);
+}
+
+*{
+    margin: 0;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+}
+
+.container{
+    width: 100%;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.globalnav{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5%;
+    color: var(--gray-text);
+}
+
+.globalnav a{
+    text-decoration: none;
+    color: var(--gray-text);
+    font-family: apple-sf-pro;
+    font-size: 15px;
+    color: var(--page-black);
+    font-weight: 200;
+}
+
+.currentOffer{
+    width: 100%;
+    height: 58px;
+    font-family: apple-sf-pro;
+    word-spacing: 2px;
+    text-align: center;
+    align-content: center;
+    background-color: white;
+}
+
+.currentOffer a{
+    color: var(--link-color);
+}
+
+.support {
+    width: 80%;
+    height: 248px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.support h1{
+    font-size: 48px;
+    font-family: apple-sf-pro-bold;
+    max-width: 640px;
+    margin-left: 10%;
+    padding-left: 2%;
+}
+
+.changecolor{
+    color: var(--gray-text);
+}
+
+.support .helpcontainer{
+    position: absolute;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.support .helpcontainer .helpcontainerpack{
+    display: flex;
+}
+
+.helpcontainerpack .profimg{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpcontainerpack .helptext{
+    width: 70%;
+    text-wrap: nowrap;
+    font-family: apple-sf-pro-medium;
+}
+
+.helpcontainerpack .helptext a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.helpcontainerpack .profimg img{
+    width: 35px;
+    height: 35px;
+}
+
+.catagorys {
+    width: 100%;
+    height: 248px;
+    padding-bottom: 62px;
+    box-sizing: border-box;
+    padding-left: 10%;
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 16px;
+}
+
+.catagorys .catagorysitems{
+    width: 136px;
+    height: 148px;
+    padding: 18px 8px 16px;
+}
+
+.catagorys .catagorysitems img{
+    width: 120px;
+    height: 78px;
+    padding-bottom: 16px;
+}
+
+.catagorys .catagorysitems p{
+    width: 100%;
+    text-align: center;
+    font-family: apple-sf-pro-medium;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.latest{
+    font-size: 28px;
+    font-family: apple-sf-pro-bold;
+    margin-left: 10%;
+}
+
+.latestItems{
+    max-width: 100%;
+    height: 516px;
+    display: flex;
+    padding-left: 10%;
+    padding-top: 24px;
+    overflow-x: scroll;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.latestItems .latestItemsContents{
+    min-width: 400px;
+    min-height: 500px;
+    background-size: contain;
+    border-radius: 24px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.latestItemsContents h2{
+    font-family: apple-sf-pro;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.latestItemsContents h3{
+    font-family: apple-sf-pro;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.latestItemsContents p{
+    font-family: apple-sf-pro-light;
+    font-size: 14px;
+}
