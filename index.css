@@ -25,6 +25,11 @@
     src: url(Fonts/SFNSDisplay-Light.otf);
 }
 
+@font-face {
+    font-family: apple-sf-pro-thin;
+    src: url(Fonts/SFNSDisplay-Thin.otf);
+}
+
 *{
     margin: 0;
 }
@@ -73,6 +78,7 @@
     text-align: center;
     align-content: center;
     background-color: white;
+    animation: dropdown 1s ease;
 }
 
 .currentOffer a{
@@ -170,31 +176,40 @@
 }
 
 .latest{
-    font-size: 28px;
+    font-size: 32px;
     font-family: apple-sf-pro-bold;
     margin-left: 10%;
 }
 
 .latestItems{
     max-width: 100%;
-    height: 516px;
+    height: 556px;
     display: flex;
     padding-left: 10%;
+    padding-right: 5%;
     padding-top: 24px;
     overflow-x: scroll;
+    overflow-y: hidden;
     gap: 20px;
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .latestItems .latestItemsContents{
     min-width: 400px;
-    min-height: 500px;
-    background-size: contain;
+    max-height: 500px;
+    background-size: cover;
     border-radius: 24px;
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.latestItemsContents:hover{
+    transform: scale(1.02); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .latestItemsContents h2{
@@ -212,4 +227,497 @@
 .latestItemsContents p{
     font-family: apple-sf-pro-light;
     font-size: 14px;
+}
+
+.appleIntelligence{
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #C300FF 8%, #CF1512 38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.helprow{
+    max-width: 100%;
+    height: 556px;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 24px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.helprow .helprowContent{
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    background-size: cover;
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.helprowContent:hover{
+    transform: scale(1.02); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.helprowContent h2, .smallhelprowContent h2{
+    font-family: apple-sf-pro-bold;
+    font-size: 28px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.helprowContent p, .smallhelprowContent p{
+    font-family: apple-sf-pro-medium;
+    color: var(--gray-text);
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.helprowContent h3, .smallhelprowContent h3{
+    font-family: apple-sf-pro-thin;
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.smallhelprowContent{
+    min-width: 400px;
+    max-height: 31.25rem;
+    background-size: cover;
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.smallhelprowContent:hover{
+    transform: scale(1.02); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#insidehelprowContent{
+    height: 70%;
+    width: 100%;
+}
+
+.helprowContentvideo{
+    width: 100%;
+    height: 30%;
+}
+
+.services{
+    max-width: 100%;
+    height: 296px;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 24px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.services .serviceslists{
+    min-width: 313px;
+    height: 240px;
+    background-color: white;
+    border-radius: 18px;
+    padding: 28px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.serviceslists:hover{
+    transform: scale(1.02); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.services .serviceslists p{
+    font-size: 22px;
+    font-family: apple-sf-pro-medium;
+}
+
+#gradient{
+    background: #CF8939;
+background: linear-gradient(to right, #CF8939 4%, #FF2A2A 22%, #B73BFF 39%, #54FA2A 58%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+
+.accessories{
+    width: 100%;
+    height: 556px;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 24px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.accessories .accessoriesContent{
+    min-width: 400px;
+    max-height: 29.4117647059rem;
+    background-size: cover;
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accessoriesContent:hover{
+    transform: scale(1.02); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.accessoriesContent h2{
+    font-family: apple-sf-pro-bold;
+    font-size: 28px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.accessoriesContent p{
+    font-family: apple-sf-pro-medium;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.accessoriesContent h3{
+    font-family: apple-sf-pro-thin;
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.accessories .accessoriesProducts{
+    min-width: 313px;
+    max-height: 29.4117647059rem;
+    background-size: cover;
+    border-radius: 24px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    position: relative;
+}
+
+.accessoriesProducts:hover{
+    transform: scale(1.02); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.accessoriesProducts h2{
+    font-family: apple-sf-pro-bold;
+    font-size: 17px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.accessoriesProducts p{
+    font-family: apple-sf-pro-medium;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.accessoriesProducts h4{
+    font-family: apple-sf-pro-thin;
+    letter-spacing: 1px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.accessoriesProducts img{
+    width: 198px;
+    margin-left: 11%;
+    margin-top: 14%;
+}
+
+.accessoriesProducts .accessoriesProductDetails{
+    width: 100%;
+    height: 45%;
+    padding-top: 20%;
+    position: relative;
+}
+
+.accessoriesProductDetails ul{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0 0 0;
+    margin-bottom: 16px;
+    position: absolute;
+    top: 0;
+}
+
+.accessoriesProductDetails ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 12px;
+}
+
+.accessoriesProductDetails ul img{
+    width: 12px;
+}
+
+.audioDevices{
+    width: 100%;
+    height: 556px;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 24px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.audioDevices .audioDeviceProducts{
+    min-width: 313px;
+    max-height: 29.4117647059rem;
+    background-size: cover;
+    border-radius: 24px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+
+.audioDeviceProducts:hover{
+    transform: scale(1.02); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.audioDeviceProducts h2{
+    font-family: apple-sf-pro-bold;
+    font-size: 17px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.audioDeviceProducts p{
+    font-family: apple-sf-pro-medium;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #b64400;
+}
+
+.audioDeviceProducts h4{
+    font-family: apple-sf-pro-thin;
+    letter-spacing: 1px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.audioDeviceProducts img{
+    width: 198px;
+    margin-left: 11%;
+    margin-top: 14%;
+}
+
+.audioDevices .audioDeviceProductsDetails{
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    position: relative;
+}
+
+.audioDeviceProductsDetails ul{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0 0 0;
+    margin-bottom: 16px;
+    position: absolute;
+    top: 0;
+}
+
+.audioDeviceProductsDetails ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 2px;
+    width: 12px;
+}
+
+.audioDeviceProductsDetails ul img{
+    width: 12px;
+}
+
+.quicklinks {
+    width: 100%;
+    height: 74px;
+}
+
+.quicklinks ul{
+    list-style-type: none;
+    width: (100%-16px);
+    margin-left: 10%;
+    padding: 32px 0 0 0;
+    margin-bottom: 16px;
+}
+
+.quicklinks ul li{
+    display: inline-block;
+    margin: 6px;
+    text-align: center;
+    width: 120px;
+}
+
+.quicklinks ul li a{
+    text-decoration: none;
+    color: var(--page-black);
+    font-family: apple-sf-pro;
+    border: 2px black solid;
+    padding: 12px;
+    white-space: pre;
+    border-radius: 50px;
+}
+
+.quicklinks ul li a:hover{
+    color: var(--main-bg-color);
+    background-color: var(--page-black);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .termsandconditions{
+    width: 65%;
+    padding-top: 56px;
+    box-sizing: border-box;
+    font-family: apple-sf-pro;
+    color: var(--gray-text);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.termsandconditions p{
+    margin-bottom: 16px;
+}
+
+hr{
+    height: 2px;
+    width: 65%;
+    background-color: rgb(198, 198, 198);
+    border: none;
+}
+
+.applestoreonline{
+    width: 65%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+}
+
+.applestoreonline p{
+    padding-left: 16px;
+    font-family: apple-sf-pro;
+    color: var(--gray-text);
+    letter-spacing: 1px;
+}
+
+.directory{
+    display: grid;
+    width: 65%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.directory-column h3{
+    font-family: apple-sf-pro-bold;
+    font-size: 14px;
+    color: var(--page-black);
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.directory-column ul{
+    list-style: none;
+    padding: 0;
+}
+
+.directory-column li{
+    color: var(--gray-text);
+    font-family: apple-sf-pro;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+#morewaystoshop{
+    width: 65%;
+    color: var(--gray-text);
+    font-family: apple-sf-pro;
+    font-size: 14px;
+    padding: 44px 0 16px 0;
+}
+
+#morewaystoshop a{
+    color: var(--link-color);
+}
+
+.copyrights {
+    width: 65%;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: apple-sf-pro;
+    color: var(--gray-text);
+    font-size: 14px;
+}
+
+.copyrights-and-links{
+    display: flex;
+    gap: 24px;
+}
+
+
+@keyframes dropdown {
+    0% {
+        height: 0px;
+    }
+    100%{
+        height: 58px;
+    }
+}
+
+@keyframes scale {
+    0%{
+        scale: 1;
+    }
+    100% {
+        scale: 1.02;
+    }
 }
