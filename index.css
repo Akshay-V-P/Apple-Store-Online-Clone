@@ -171,6 +171,11 @@
     font-family: apple-sf-pro-medium;
 }
 
+.catagorys .catagorysitems a{
+    color: var(--page-black);
+    text-decoration: none;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
